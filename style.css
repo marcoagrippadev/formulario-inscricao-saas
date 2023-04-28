@@ -1,0 +1,98 @@
+/* GERAL */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* APRESENTAÇÃO */
+
+#about-container {
+    flex: 1.4;
+    padding: 2rem 4rem;
+}
+
+#about-container h2 {
+    font-size: 2.4rem;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#logo {
+    display: flex;
+align-items: center;
+font-size: 0.8rem;
+margin-bottom: 1rem;
+}
+
+#img-logo {
+    width: 50px;
+    margin-right: 0.6rem;
+}
+
+#exclusivo {
+    text-transform: uppercase;
+    color: rgb(36, 122, 221);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#data {
+    text-transform: uppercase;
+    color: rgb(166, 174, 180);
+    margin-bottom: 1rem;
+}
+
+#descricao {
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+#about-container h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#users-container {
+display: flex;    
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.user-card {
+    border: 2px solid rgb(182, 182, 182);
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+}
+
+.img-user-card {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.user-card .user-name {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.user-card .cargo {
+    color: rgb(129, 129, 129);
+    font-size: 0.9rem;
+}
+
+/* FORMULÁRIO */
+
+#form-container {
+flex: 1;
+}
