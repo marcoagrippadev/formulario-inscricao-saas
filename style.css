@@ -1,10 +1,10 @@
 /* GERAL */
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 body {
@@ -27,9 +27,9 @@ body {
 
 #logo {
     display: flex;
-align-items: center;
-font-size: 0.8rem;
-margin-bottom: 1rem;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 #img-logo {
@@ -63,9 +63,9 @@ margin-bottom: 1rem;
 }
 
 #users-container {
-display: flex;    
-flex-wrap: wrap;
-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .user-card {
@@ -94,5 +94,144 @@ gap: 1rem;
 /* FORMULÁRIO */
 
 #form-container {
-flex: 1;
+    flex: 1;
+    background-image: url("img/pattern.png");
+    background-size: cover;
+    color: aliceblue;
+}
+
+#form-inner {
+    margin: 3rem;
+    padding: 3rem;
+    border: 3px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-inner h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#form-inner p {
+    margin-bottom: 1rem;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* GAP SERVE PRA AFASTAR UM ELEMENTO DO OUTRO NA HORIZONTAL */
+
+#name-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#register-form input {
+    padding: .8rem .6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email {
+    min-width: 100%;
+}
+
+#register-form input[type="submit"] {
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#register-form input[type="submit"]:hover {
+    background-color: aliceblue;
+    color: rgb(36, 122, 221);
+}
+
+#benefits {
+    text-align: left;
+    align-self: start;
+}
+
+#benefits h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#benefits ul {
+    list-style-position: inside;
+}
+
+#benefits li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 450px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    #about-container {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    #about-container h2 {
+        font-size: 3rem;
+    }
+
+    #exclusivo data {
+        font-size: 1.4rem;
+    }
+
+    #exclusivo descricao {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    #users-container {
+        flex-direction: column;
+    }
+
+.user-card {
+    width: 100%;
+padding: 2rem;
+}
+
+.img-user-card {
+width: 180px;
+}
+
+.user-card .user-name {
+    font-size: 1.6rem;
+}
+
+.user-card .cargo {
+    font-size: 1.4rem;
+}
+
+#form-inner {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+#register-form,
+#name-container {
+    gap: 1rem;
+}
+
 }
